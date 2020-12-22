@@ -1,0 +1,58 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - praise
+  - help_me
+  - bot_challenge
+  - how_are_doing
+  - thanks
+
+responses:
+  utter_greet:
+  - text: "Olá! Como você está?"
+  - text: "Oi, eu sou um bot, um assistente virtual!\nUhuu! Manda aí um assunto que\
+      \ te interessa :)\nPara aprender como você pode interagir comigo basta escrever\
+      \ meajuda.\n"
+
+  utter_how_are_doing:
+  - text: "Estou muito bem!"
+  - text: "Estou bem!"
+  - text: "Melhor agora!"
+
+  utter_praise:
+  - text: "Obrigada! É sempre bom dar e receber elogios :P\n"
+
+  utter_thanks:
+  - text: "Que bom!"
+  - text: "Eu que agradeço!"
+
+  utter_help_me:
+  - text: "Como posso te ajudar?"
+  - text: "O que precisa?"
+  - text: "Em que posso te ajudar?"
+
+  utter_goodbye:
+  - text: "Foi um prazer te ajudar!\nSempre que tiver alguma dúvida, volte aqui!\n\
+      Até logo!\n"
+  - text: "Foi um prazer te ajudar!\nSempre que precisar, volte aqui!\nAté a próxima!\n"
+  - text: "Foi um prazer te ajudar!\nQuando surgir alguma dúvida, volte aqui!\nAté\
+      \ mais!\n"
+
+  utter_iamabot:
+  - text: "Eu sou um robô, construido com Rasa."
+
+  utter_fallback:
+  - text: "Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender\
+      \ direito\nVocê pode perguntar de novo de outro jeito?\n"
+  - text: "Hummmm... Não sei se entendi. Pode escrever de outra forma?\n"
+  - text: "Acho que não te entendi, você pode me perguntar de novo usando outras palavras?\n"
+  - text: "Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta\
+      \ de outro jeito?\n"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

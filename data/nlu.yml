@@ -1,0 +1,84 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - olá
+    - olá, tudo bem?
+    - oi
+    - bom dia
+    - boa tarde
+    - boa noite
+
+- intent: goodbye
+  examples: |
+    - tchau
+    - adeus
+    - flw
+    - até mais, bot
+
+- intent: thanks
+  examples: |
+    - muito obrigado
+    - obrigado
+    - fico grato
+    - estou grato
+    - agradecido
+    - grato
+
+- intent: how_are_doing
+  examples: |
+    - com está?
+    - como vai?
+    - tudo bem?
+    - como você está?
+    - está tudo bem?
+
+- intent: affirm
+  examples: |
+    - sim
+    - ok
+    - certo
+    - correto
+    - exatamente
+    - exato
+
+- intent: deny
+  examples: |
+    - não
+    - nunca
+    - nem
+    - nada não
+    - nada disso
+    - nem é
+    - não é
+    - não conheço
+    - não quero
+    - jamais
+
+- intent: praise
+  examples: |
+    - você é muito educado
+    - me ajudou muito
+    - você é demais
+    - você é lindo
+    - você é maravilhoso
+    - você é demais
+    - você é bonito
+    - adorei você
+    - amei você
+
+- intent: help_me
+  examples: |
+    - estou com dúvidas! 
+    - me ajude
+    - preciso de sua ajuda
+    - pode me ajudar?
+    - me tire uma dúvida
+
+- intent: bot_challenge
+  examples: |
+    - você é um robô?
+    - você é um humano?
+    - estou falando com um robô?
+    - estou falando com um humano?
