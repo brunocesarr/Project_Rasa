@@ -1,84 +1,362 @@
 version: "2.0"
 
 nlu:
+##  Cumprimente o robô.
 - intent: greet
   examples: |
-    - olá
-    - olá, tudo bem?
-    - oi
-    - bom dia
-    - boa tarde
-    - boa noite
+    - Bom dia
+    - Boa tarde
+    - Boa noite
+    - Eae
+    - Ei
+    - Olá
+    - Oi
+    - Opa
+    - Hello
+    - Hey
+    - Hi
+    - Bom dia, você está ai?
+    - Boa tarde, você está ai?
+    - Boa noite, você está ai?
+    - Como estão as coisas aí?
+    - Ei, você está aí?
+    - Olá, tudo bem?
+    - Ei, pode me ajudar?
+    - Olá, pode me ajudar?
+    - Opa, pode me ajudar?
+    - Eu gostaria de conversar com o Watson.
 
+##  Termine a conversa.
 - intent: goodbye
   examples: |
-    - tchau
-    - adeus
-    - flw
-    - até mais, bot
+    - Tchau
+    - Txhau
+    - Adeus
+    - Flw
+    - Até mais, Bot
+    - Ainda não terminou?
+    - Bjus
+    - Bye
+    - Falo contigo depois. Tchau
+    - Volto mais tarde
+    - Vejo você mais tarde.
+    - Vamos dar uma pausa e tentar novamente mais tarde. Tchau
+    - Eu preciso correr porque acabei de notar que estou atrasado para o meu próximo compromisso
+    - Muito obrigado pelo seu tempo. Me desculpe, mas eu tenho que ir. Até logo!
+    - Vou sair agora. Tchau
+    - Estou indo embora.
+    - Eu estou indo agora. Tenha um bom dia. Tchau
+    - Ok, isso é tudo que eu preciso para agora.
+    - Tudo bem, eu tenho tudo o que eu precisava
+    - Obrigada, tchau!
+    - Obrigado por responder todas as minhas perguntas. Tchau
+    - Obrigado pela sua ajuda, mas ainda estou confuso… Tchau
+    - Desculpe ter ocupado tanto do seu tempo. Eu sei que estamos os dois ocupados e acho que tenho que dizer tchau por ora.
+    - Quero encerrar a conversa, obrigado.
+    - Pare esta sessão agora. Tchau
+    - Te desejo o melhor de sorte. Tchau
+    - Estou cansado de digitar agora. Obrigado e adeus
+    - Você foi de pouca ajuda, por isso não quero falar com você mais, tchau
 
-- intent: thanks
+##  Exprima sentimento positivo ou gratidão.
+- intent: positive_feedback
   examples: |
-    - muito obrigado
-    - obrigado
-    - fico grato
-    - estou grato
-    - agradecido
-    - grato
+    - Muito obrigado
+    - Obrigado
+    - Fico grato
+    - Estou grato
+    - Agradecido
+    - Grato
+    - Ótimo!
+    - É muito louco o que um robô pode fazer.
+    - Estou impressionado com você.
+    - Estou pegando a manha disso.
+    - Eu gostei do que você fez aí.
+    - Genial! Isso é exatamente o que eu pensei.
+    - Gostei muito do seu trabalho.
+    - Incrível como você é bom!
+    - Isso é divertido.
+    - Isso é muito legal.
+    - Muito bom, obrigado.
+    - Muito inteligente.
+    - Você detonou.
+    - Você é adorável.
+    - Você é demais.
+    - Você é inteligente.
+    - Você é legal.
+    - Você é o cara.
+    - Você me deu exatamente o que eu precisava.
 
+##  Exprima feedback desfavorável.
+- intent: negative_feedback
+  examples: |
+    - Por que você é retardado?
+    - Porra, como posso falar com uma pessoa real?
+    - Seja bom uma vez na vida.
+    - Todo mundo te odeia.
+    - Uma experiência horrível, com certeza!
+    - Você é burro.
+    - Você é ruim mesmo?
+    - Você está fora de si?
+    - Você está me entediando.
+    - Você não vale nada.
+    - Você é uma piada?
+
+##  Perguntas sobre como está
 - intent: how_are_doing
   examples: |
-    - com está?
-    - como vai?
-    - tudo bem?
-    - como você está?
-    - está tudo bem?
+    - Com está?
+    - Como vai?
+    - Tudo bem?
+    - Como você está?
+    - Está tudo bem?
 
+##  Afirmação
 - intent: affirm
   examples: |
-    - sim
-    - ok
-    - certo
-    - correto
-    - exatamente
-    - exato
+    - Sim
+    - Ok
+    - Certo
+    - Correto
+    - Exatamente
+    - Exato
+    - Certamente
+    - Claro
 
+##  Negação
 - intent: deny
   examples: |
-    - não
-    - nunca
-    - nem
-    - nada não
-    - nada disso
-    - nem é
-    - não é
-    - não conheço
-    - não quero
-    - jamais
+    - Não
+    - Nunca
+    - Nem
+    - Nada não
+    - Nada disso
+    - Nem é
+    - Não é
+    - Não conheço
+    - Não quero
+    - Jamais
+    - Talvez depois!
+    - Não desculpo
+    - Não, obrigado!
 
-- intent: praise
-  examples: |
-    - você é muito educado
-    - me ajudou muito
-    - você é demais
-    - você é lindo
-    - você é maravilhoso
-    - você é demais
-    - você é bonito
-    - adorei você
-    - amei você
-
+##  Fornece sugestões ao usuário.
 - intent: help_me
   examples: |
-    - estou com dúvidas! 
-    - me ajude
-    - preciso de sua ajuda
-    - pode me ajudar?
-    - me tire uma dúvida
+    - Ajuda
+    - Dicas
+    - Help
+    - Socorro
+    - Sugestões
+    - Me ajude
+    - Estou com dúvidas! 
+    - Me tire uma dúvida
+    - Preciso de sua ajuda
+    - Pode me ajudar?
+    - Estou perdido
+    - Tem alguma sugestão
+    - Eu quero sugestões
+    - Quais a sugestões
+    - Eu quero ver opções
 
+##  Ajuda sobre determinado assunto
+- intent: help_about
+  examples: |
+    - Me explica?
+    - O que é?
+    - O que faz?
+    - Qual o significado?
+    - Quem é?
+
+##  Dúvidas sobre rotas
+- intent: help_route
+  examples: |
+    - Como chegar?
+    - Como chego?
+    - Como vou até a sala do professor?
+    - Desejo achar alguém
+    - Estou buscando
+    - Estou procurando
+    - Onde fica?
+    - Onde fica o laboratório?
+    - Qual o caminho da sala do professor?
+    - Rotas
+    - Rotas do prédio
+    - Rotas no prédio
+
+##  Dúvidas sobre rotas de salas professores
+- intent: help_route_teacher
+  examples: |
+    - "Onde fica a sala do [Alessandro Vivas Andrade](teacher)?"
+    - "Onde fica a sala do [Alessandro](teacher)?"
+    - "Onde fica a sala do [Vivas](teacher)?"
+    - "Onde fica a sala do [André Covre](teacher)?"
+    - "Onde fica a sala do [André](teacher)?"
+    - "Onde fica a sala do [Covre](teacher)?"
+    - "Onde fica a sala do [Áthila Rocha Trindade](teacher)?"
+    - "Onde fica a sala do [Áthila](teacher)?"
+    - "Onde fica a sala da [Caroline Queiroz Santos](teacher)?"
+    - "Onde fica a sala da [Caroline Queiroz](teacher)?"
+    - "Onde fica a sala da [Carol](teacher)?"
+    - "Onde fica a sala da [Cinthya Rocha Tameirão](teacher)?"
+    - "Onde fica a sala da [Cinthya](teacher)?"
+    - "Onde fica a sala da [Claudia Beatriz Berti](teacher)?"
+    - "Onde fica a sala da [Claudia](teacher)?"
+    - "Onde fica a sala do [Eduardo Pelli](teacher)?"
+    - "Onde fica a sala do [Pelli](teacher)?"
+    - "Onde fica a sala do [Erinaldo Barbosa da Silva](teacher)?"
+    - "Onde fica a sala do [Erinaldo](teacher)?"
+    - "Onde fica a sala do [George Henrique M. Rodolfo](teacher)?"
+    - "Onde fica a sala do [George](teacher)?"
+    - "Onde fica a sala da [Geruza de Fátima Tomé Sabino](teacher)?"
+    - "Onde fica a sala da [Geruza](teacher)?"
+    - "Onde fica a sala do [Leonardo Lana de Carvalho](teacher)?"
+    - "Onde fica a sala do [Leonardo](teacher)?"
+    - "Onde fica a sala do [Lana](teacher)?"
+    - "Onde fica a sala da [Luciana Pereira de Assis](teacher)?"
+    - "Onde fica a sala da [Luciana](teacher)?"
+    - "Onde fica a sala do [Marcelo Ferreira Rego](teacher)?"
+    - "Onde fica a sala do [Marcelo](teacher)?"
+    - "Onde fica a sala da [Maria Lúcia Bento Villela](teacher)?"
+    - "Onde fica a sala da [Maria Lúcia](teacher)?"
+    - "Onde fica a sala do [Rafael Santin](teacher)?"
+    - "Onde fica a sala do [Santin](teacher)?"
+
+##  Dúvidas sobre rotas de laboratórios
+- intent: help_route_laboratory
+  examples: |
+    - "Onde fica o laboratório [31](laboratory)?"
+    - "Onde fica o laboratório [32](laboratory)?"
+    - "Onde fica o laboratório [33](laboratory)?"
+    - "Onde fica o laboratório [34](laboratory)?"
+    - "Onde fica o laboratório [35](laboratory)?"
+    - "Onde fica o laboratório [36](laboratory)?"
+
+##  Dúvidas sobre rotas de grupos de pesquisa
+- intent: help_route_research_group
+  examples: |
+    - "Onde fica o grupo de pesquisa [GesTI](research_group)?"
+    - "Onde fica o grupo de pesquisa [LabLIC](research_group)?"
+    - "Onde fica o grupo de pesquisa [LaPIES](research_group)?"
+    - "Onde fica o grupo de pesquisa [MTPLNAM](research_group)?"
+    - "Onde fica o grupo de pesquisa [OIA](research_group)?"
+
+##  Dúvidas sobre rotas de outros lugares
+- intent: help_route_another_place
+  examples: |
+    - "Onde fica o [Auditório](another_place)?"
+    - "Onde fica a [Next Step](another_place)?"
+    - "Onde fica a sala da [Next Step](another_place)?"
+    - "Onde fica a sala da [Empresa Jr.](another_place)?"
+    - "Onde fica a [Sala 37](another_place)?"
+    - "Onde fica a [Secretária](another_place)?"
+    - "Onde fica os [Técnicos](another_place)?"
+    - "Onde fica a sala dos [Técnicos](another_place)?"
+    - "Onde fica a [The Bug](another_place)?"
+    - "Onde fica a sala da [The Bug](another_place)?"
+    - "Onde fica a sala da [Atlética](another_place)?"
+
+##  Pergunte se está falando com um humano ou um robô.
 - intent: bot_challenge
   examples: |
-    - você é um robô?
-    - você é um humano?
-    - estou falando com um robô?
-    - estou falando com um humano?
+    - Você é um robô?
+    - Você é um humano?
+    - Você é real?
+    - Estou falando com um robô?
+    - Estou falando com um humano?
+    - Estou conversando com um humano?
+    - Estou conversando com um robô?
+    - Eu estou conversando com o Watson?
+    - Diga-me, você é humano ou não?
+    - Estou conversando com uma pessoa ou com uma IA?
+    - Você é uma pessoa real ou um robô?
+    - Com quem estou falando?
+    - Quem é você?
+
+##  Sobre a História do Curso
+- intent: history_curse
+  examples: |
+    - História
+    - Como surgiu o curso?
+    - Qual a história do curso?
+    - Qual a idade do curso?
+    - Qual sua história?
+    - Quantos anos tem o curso?
+
+##  Sobre a Atlética do Curso
+- intent: atletic_curse
+  examples: |
+    - The Bug
+    - Atlética
+    - E a atlética?
+    - Existe atlética?
+    - O curso tem atlética?
+    - Qual a atlética do curso?
+    - Quem é a atlética do curso?
+
+##  Sobre a Empresa Jr do Curso
+- intent: company_jr_curse
+  examples: |
+    - Next Step
+    - Empresa Jr
+    - Empresa Junior
+    - E a empresa jr?
+    - Existe alguma empresa Jr?
+    - Existem empresa jr no curso?
+    - Qual a empresa junior do curso?
+    - Qual é a empresa jr?
+
+##  Sobre contatos com o curso.
+- intent: contact_curse
+  examples: |
+    - Como entro em contato?
+    - Como posso entrar em contato?
+    - Quais contatos do curso?
+    - Qual o contato?
+    - Qual o contato do curso?
+    - Qual o email?
+    - Tem algum contato?
+
+##  Sobre as disciplinas do curso.
+- intent: discipline_curse
+  examples: |
+    - Disciplinas
+    - Matérias
+    - Quais a disciplinas?
+    - Quais as matérias?
+    - Qual a grade do curso?
+    - Quero saber sober as matérias?
+
+##  Sobre os professores do curso.
+- intent: teacher_curse
+  examples: |
+    - Encontrar professor
+    - E os docentes?
+    - Quais professores tem no curso?
+    - Quais são os professores?
+    - Quem são os docentes?
+    - Quem são os professores?
+
+##  Sobre os grupos de pesquisa do curso.
+- intent: research_group_curse
+  examples: |
+    - Grupos de Pesquisa
+    - E os grupos de pesquisa?
+    - Quais grupos de pesquisa tem no curso?
+    - Quais são os grupos de pesquisa?
+    - Quem são os grupos de pesquisa?
+
+##  Sobre o curso.
+- intent: curse
+  examples: |
+    - Conte me sobre o curso
+    - Eu quero saber sobre o curso
+    - Me diga mais sobre o curso?
+    - O curso é mais voltado para o quê?
+    - Onde fica o curso?
+    - O que é o curso?
+    - O que vou ver no curso?
+    - Preciso estudar algo para entrar no curso?
+    - Quais os pré-requisitos?
+    - Qual a localidade do curso?
+    - Qual o perfil do curso?

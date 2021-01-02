@@ -17,3 +17,237 @@ stories:
   - action: utter_help_me
   - intent: goodbye
   - action: utter_goodbye
+
+- story: help me about curse path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: curse
+  - action: utter_curse
+  - intent: positive_feedback
+  - action: utter_positive_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me about curse path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: curse
+  - action: utter_curse
+  - intent: negative_feedback
+  - action: utter_negative_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me about history curse path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: history_curse
+  - action: utter_history_curse
+  - intent: positive_feedback
+  - action: utter_positive_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me about history curse path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: history_curse
+  - action: utter_history_curse
+  - intent: negative_feedback
+  - action: utter_negative_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me about atletic curse path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: atletic_curse
+  - action: utter_atletic_curse
+  - intent: positive_feedback
+  - action: utter_positive_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me about atletic curse path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: atletic_curse
+  - action: utter_atletic_curse
+  - intent: negative_feedback
+  - action: utter_negative_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me about company Jr. curse path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: company_jr_curse
+  - action: utter_company_jr_curse
+  - intent: positive_feedback
+  - action: utter_positive_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me about company Jr. curse path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: company_jr_curse
+  - action: utter_company_jr_curse
+  - intent: negative_feedback
+  - action: utter_negative_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me about contacts curse path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: contact_curse
+  - action: utter_contact_curse
+  - intent: positive_feedback
+  - action: utter_positive_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me about contacts curse path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: contact_curse
+  - action: utter_contact_curse
+  - intent: negative_feedback
+  - action: utter_negative_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me about disciplines curse path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: discipline_curse
+  - action: utter_discipline_curse
+  - intent: positive_feedback
+  - action: utter_positive_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me about disciplines curse path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: discipline_curse
+  - action: utter_discipline_curse
+  - intent: negative_feedback
+  - action: utter_negative_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me about teachers curse path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: teacher_curse
+  - action: utter_teacher_curse
+  - intent: positive_feedback
+  - action: utter_positive_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me about teachers curse path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: teacher_curse
+  - action: utter_teacher_curse
+  - intent: negative_feedback
+  - action: utter_negative_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me about research group curse path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: research_group_curse
+  - action: utter_research_group_curse
+  - intent: positive_feedback
+  - action: utter_positive_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me about research group curse path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: research_group_curse
+  - action: utter_research_group_curse
+  - intent: negative_feedback
+  - action: utter_negative_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me route teachers curse path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: help_route
+  - action: utter_help_route
+  - intent: positive_feedback
+  - action: utter_positive_feedback
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help me route teachers curse path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_me
+  - action: utter_help_me
+  - intent: help_route
+  - action: utter_help_route
+  - intent: negative_feedback
+  - action: utter_negative_feedback
+  - intent: goodbye
+  - action: utter_goodbye

@@ -3,56 +3,231 @@ version: "2.0"
 intents:
   - greet
   - goodbye
+  - positive_feedback
+  - negative_feedback
+  - how_are_doing
   - affirm
   - deny
-  - praise
   - help_me
+  - help_about
+  - help_route
+  - help_route_teacher
+  - help_route_laboratory
+  - help_route_research_group
+  - help_route_another_place
   - bot_challenge
-  - how_are_doing
-  - thanks
+  - history_curse
+  - atletic_curse
+  - company_jr_curse
+  - contact_curse
+  - discipline_curse
+  - teacher_curse
+  - research_group_curse
+  - curse
+
+entities:
+  - another_place
+  - research_group
+  - laboratory
+  - teacher
 
 responses:
   utter_greet:
-  - text: "Olá! Como você está?"
-  - text: "Oi, eu sou um bot, um assistente virtual!\nUhuu! Manda aí um assunto que\
-      \ te interessa :)\nPara aprender como você pode interagir comigo basta escrever\
-      \ meajuda.\n"
-
-  utter_how_are_doing:
-  - text: "Estou muito bem!"
-  - text: "Estou bem!"
-  - text: "Melhor agora!"
-
-  utter_praise:
-  - text: "Obrigada! É sempre bom dar e receber elogios :P\n"
-
-  utter_thanks:
-  - text: "Que bom!"
-  - text: "Eu que agradeço!"
-
-  utter_help_me:
-  - text: "Como posso te ajudar?"
-  - text: "O que precisa?"
-  - text: "Em que posso te ajudar?"
+    - text: "Olá! Como posso te ajudar?\n"
+    - text: "Olá, sou um Bot desenvolvido com fins de ajudar a você com possíveis dúvidas sobre o curso de Sistemas de Informação da UFVJM. Posso te ajudar?\n"
+    - text: "Ei, sou um Bot desenvolvido com fins de ajudar a você com possíveis dúvidas sobre o curso de Sistemas de Informação da UFVJM. Posso te ajudar?\n"
 
   utter_goodbye:
-  - text: "Foi um prazer te ajudar!\nSempre que tiver alguma dúvida, volte aqui!\n\
-      Até logo!\n"
-  - text: "Foi um prazer te ajudar!\nSempre que precisar, volte aqui!\nAté a próxima!\n"
-  - text: "Foi um prazer te ajudar!\nQuando surgir alguma dúvida, volte aqui!\nAté\
-      \ mais!\n"
+    - text: "Foi um prazer te ajudar!\nSempre que tiver alguma dúvida, volte aqui!\n\
+        Até logo!\n"
+    - text: "Foi um prazer te ajudar!\nSempre que precisar, volte aqui!\nAté a próxima!\n"
+    - text: "Foi um prazer te ajudar!\nQuando surgir alguma dúvida, volte aqui!\nAté\
+        \ mais!\n"
+    - text: "Espero que tenha ajudado! Até mais.\n"
 
-  utter_iamabot:
-  - text: "Eu sou um robô, construido com Rasa."
+  utter_positive_feedback:
+    - text: "Que bom que gostou!\n"
+    - text: "Estou feliz que gostou!\n"
+    - text: "Fico contente!\n"
+
+  utter_negative_feedback:
+    - text: "Oh! Me desculpe!\n"
+    - text: "Desculpas!\n"
+    - text: "Sinto muito!\n"
+
+  utter_react_negative:
+    - text: 😕
+    - text: 😞
+    - text: 😥
+    - text: 😢
+  
+  utter_react_positive:
+    - text: 😄
+    - text: 😊
+    - text: 👏
+    - text: 😍
+    
+  utter_how_are_doing:
+    - text: "Estou muito bem!\n"
+    - text: "Estou bem!\n"
+    - text: "Melhor agora!\n"
+
+  utter_help_me:
+    - text: "Estou aqui para ajudar! Se você quiser temos algumas sugestões:\
+      \ \n - História
+      \ \n - Atlética
+      \ \n - Empresa Jr.
+      \ \n - Encontrar sala ou professor\n"
+    - text: "Se sente perdido?! Que tal essas sugestões:
+      \ \n - História
+      \ \n - Atlética
+      \ \n - Empresa Jr.
+      \ \n - Encontrar sala ou professor\n"
+    - text: "Não se preocupe, temos algumas sugestões:
+      \ \n - História
+      \ \n - Atlética
+      \ \n - Empresa Jr.
+      \ \n - Encontrar sala ou professor\n"
+
+  utter_help_about:
+    - text: "Sobre o que deseja saber?\n"
+    - text: "O que deseja saber?\n"
+
+  utter_help_route:
+    - text: "Pode me dizer o que procura?\n"
+    - text: "O que deseja encontrar?\n"
+
+  utter_bot_challenge:
+    - text: "Eu sou um robô, construido com Rasa."
+    - text: "Sou um Bot desenvolvido com fins de ajudar a você com possíveis dúvidas sobre o curso de Sistemas de Informação da UFVJM."
+
+  utter_history_curse:
+    - text: "Com 14 anos, o curso de Sistemas de Informação da Universidade Federal dos Vales do Jequitinhonha e Mucuri, iniciado em 2006, funciona em Diamantina - Minas Gerais, propiciando formação sólida em Ciência da Computação, básica em Administração e abrangente em Sistemas de Informação, enfatizando aspectos teóricos e práticos.\n"
+
+  utter_atletic_curse:
+    - text: "The Bug: Associação Atlética Acadêmica de Sistemas de Informação - UFVJM -Diamantina - MG.\
+    \ \nAs A.A.A´s (Associação Atlética Acadêmica) são as entidades responsáveis em promover e coordenar a parte esportiva de cada faculdade, organizando treinos e campeonatos externos e internos em diversas modalidades esportivas. Esta entidade também é responsável pela integração e interação dos alunos de cada faculdade através da organização de festas e na confecção e comercialização de produtos do seu curso (canecas, camisetas, etc).\n"
+
+  utter_company_jr_curse:
+    - text: "A Next Step é um exemplo de Empresa Júnior, criada pelos próprios alunos do curso de Sistemas de Informação da UFVJM, no campus JK, localizado em Diamantina (MG).\
+    \ \nTem como objetivo a busca em contribuir para o desenvolvimento socioeconômico da comunidade, como também para o desenvolvimento educacional de seus membros e estudantes do curso.\
+    \ \nSeus principais serviços e produtos são focados no desenvolvimento de sistemas computacionais, principalmente direcionados à web, de forma a facilitar a gestão e administração empresarial, e gerar vantagens competitivas aos seus clientes.\n"
+
+  utter_contact_curse:
+    - text: "O curso de sistemas de informação possui os seguintes canais de comunicação, caso deseje entrar em contato:\
+    \ \nCoordenação:\
+    \ \nCoordenador: Caroline Queiroz Santos\
+    \ \nE-mail:  caroline.queiroz@ufvjm.edu.br\
+    \ \nVice coordenador: Marcelo Ferreira Rego\
+    \ \nE-mail:  marcelofr@gmail.com\
+    \ \nSecretaria:
+    \ \nSecretário: Evandro das Mercês Amorim
+    \ \nE-mail: secretariasiufvjm@gmail.com
+    \ \nPrédio Departamento de Computação -  Sala 26 Secretaria do curso Sistemas de Informação
+    \ \nTelefone: (38) 3532-1223"
+
+  utter_discipline_curse:
+    - text: "\
+      \ \nFUNDAMENTOS DE MATEMÁTICA,
+      \ \nFUNDAMENTOS DE SISTEMAS DE INFORMAÇÃO,
+      \ \nINGLÊS INSTRUMENTAL,
+      \ \nINTRODUÇÃO À LOGICA COMPUTACIONAL,
+      \ \nLEITURA E PRODUÇÃO DE TEXTOS,
+      \ \nALGORITMOS E ESTRUTURA DE DADOS I,
+      \ \nCÁLCULO DIFERENCIAL E INTEGRAL I,
+      \ \nMATEMÁTICA DISCRETA,
+      \ \nMETODOLOGIA DO TRABALHO E DA PESQUISA CIENTÍFICA E TECNOLÓGICA,
+      \ \nSISTEMAS DE COMPUTAÇÃO,
+      \ \nTEORIA GERAL DOS SISTEMAS,
+      \ \nADMINISTRAÇÃO I,
+      \ \nALGORITMOS E ESTRUTURA DE DADOS II,
+      \ \nFUNDAMENTOS DE ECONOMIA,
+      \ \nGEOMETRIA ANALÍTICA E ÁLGEBRA LINEAR,
+      \ \nORGANIZAÇÃO E ARQUITETURA DE COMPUTADORES,
+      \ \nTEORIA DA COMPUTAÇÃO,
+      \ \nADMINISTRAÇÃO II,
+      \ \nALGORITMOS E ESTRUTURA DE DADOS III,
+      \ \nDIREITO LEGISLAÇÃO EM INFORMÁTICA,
+      \ \nESTATÍSTICA,
+      \ \nFUNDAMENTOS DE CONTABILIDADE,
+      \ \nSISTEMAS OPERACIONAIS,
+      \ \nBANCO DE DADOS I,
+      \ \nGESTÃO DE SISTEMAS DE INFORMAÇÃO,
+      \ \nLINGUAGENS DE PROGRAMAÇÃO,
+      \ \nPESQUISA OPERACIONAL,
+      \ \nPROGRAMAÇÃO ORIENTADA A OBJETOS,
+      \ \nSISTEMAS DE APOIO À DECISÃO,
+      \ \nBANCO DE DADOS II,
+      \ \nENGENHARIA DE SOFTWARE I,
+      \ \nENGENHARIA WEB,
+      \ \nINFORMÁTICA E SOCIEDADE,
+      \ \nINTELIGÊNCIA ARTIFICIAL,
+      \ \nREDES DE COMPUTADORES I,
+      \ \nCOMPORTAMENTO ORGANIZACIONAL,
+      \ \nENGENHARIA DE SOFTWARE II,
+      \ \nESTÁGIO CURRICULAR SUPERVISIONADO,
+      \ \nINTERFACE HOMEM MÁQUINA,
+      \ \nREDES DE COMPUTADORES II,
+      \ \nTÓPICOS ESPECIAIS EM SISTEMAS DE INFORMAÇÃO I,
+      \ \nTRABALHO COOPERATIVO APOIADO POR COMPUTADOR,
+      \ \nEMPREENDEDORISMO,
+      \ \nGERÊNCIA DE PROJETOS DE SOFTWARE,
+      \ \nPROJETO ORIENTADO I (TCC),
+      \ \nSEGURANÇA E AUDITORIA DE SISTEMAS DE INFORMAÇÃO,
+      \ \nSISTEMAS DISTRIBUÍDOS,
+      \ \nTÓPICOS ESPECIAIS EM SISTEMAS DE INFORMAÇÃO II\n"
+
+  utter_teacher_curse:
+    - text: "\
+      \ \nAlessandro Vivas de Andrade,
+      \ \nAndré Covre,
+      \ \nÁthila Rocha Trindade,
+      \ \nCaroline Queiroz Santos,
+      \ \nCinthya Rocha Tameirão,
+      \ \nClaudia Beatriz Berti,
+      \ \nEduardo Pelli,
+      \ \nErinaldo Barbosa da Silva,
+      \ \nGeorge Henrique M. Rodolfo,
+      \ \nGeruza de Fátima Tomé Sabino,
+      \ \nLeonardo Lana de Carvalho,
+      \ \nLuciana Pereira de Assis,
+      \ \nMarcelo Ferreira Rego,
+      \ \nMaria Lúcia Bento Villela,
+      \ \nRafael Santin\n"
+
+  utter_research_group_curse:
+    - text: "\
+      \ \nGesTI,
+      \ \nLabLIC,
+      \ \nLaPIES,
+      \ \nMTPLNAM,
+      \ \nOIA\n"
+
+  utter_curse:
+    - text: "
+    \ Uma dúvida frequente para quem está ingressando no curso é se há necessidade de algum pré-requisito?\
+    \ \nA resposta é não, uma vez que o objetivo é a formação de profissionais aptos a atuarem nas mais diversas organizações, realizando avaliação, pesquisa, desenvolvimento, gestão e utilização de modernas tecnologias de informação aplicadas às áreas administrativas e industriais.\
+    \ \nO egresso do curso de Sistemas de Informação da UFVJM deverá ser um profissional que possui um domínio das tecnologias de informação, acompanhando sua evolução de forma autônoma e independente. Esse profissional assumirá um papel de agente transformador do mercado, sendo capaz de provocar mudanças através da incorporação de novas tecnologias na solução dos problemas organizacionais.\
+    \ \nContudo, o profissional de Sistemas de Informação poderá atuar no mercado de trabalho em empresas de todos os portes, públicas ou privadas, em todos os segmentos de negócios, e estará apto a executar atividades de análise, projeto, desenvolvimento e manutenção de sistemas de informação; projeto e gerência de banco de dados; planejamento, implantação e gerência de ambientes de rede; projeto de sistemas de hardware; consultoria, auditoria e gestão de sistemas de informação; planejamento e implantação de infra-estrutura de tecnologia de informação.\n"
 
   utter_fallback:
-  - text: "Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender\
-      \ direito\nVocê pode perguntar de novo de outro jeito?\n"
-  - text: "Hummmm... Não sei se entendi. Pode escrever de outra forma?\n"
-  - text: "Acho que não te entendi, você pode me perguntar de novo usando outras palavras?\n"
-  - text: "Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta\
+    - text: "Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender\
+        \ direito\nVocê pode perguntar de novo de outro jeito?\n"
+    - text: "Hummmm... Não sei se entendi. Pode escrever de outra forma?\n"
+    - text: "Acho que não te entendi, você pode me perguntar de novo usando outras palavras?\n"
+    - text: "Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta\
       \ de outro jeito?\n"
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+slots:
+  another_place:
+    type: text
+  research_group:
+    type: text
+  laboratory:
+    type: text
+  teacher:
+    type: text
