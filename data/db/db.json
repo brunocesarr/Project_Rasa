@@ -1,0 +1,294 @@
+{
+  "teachers": [
+    {
+      "_id": 1,
+      "value": "Alessandro Vivas Andrade",
+      "synonyms": [
+        "Alessandro Vivas Andrade", 
+        "Alessandro Vivas", 
+        "Alessandro", 
+        "Vivas"
+      ]
+    },
+    {
+      "_id": 2,
+      "value": "André Covre",
+      "synonyms": [
+        "André Covre", 
+        "André", 
+        "Covre"
+      ]
+    },
+    {
+      "_id": 3,
+      "value": "Áthila Rocha Trindade",
+      "synonyms": [
+        "Áthila Rocha Trindade", 
+        "Áthila Rocha", 
+        "Áthila"
+      ]
+    },
+    {
+      "_id": 4,
+      "value": "Caroline Queiroz Santos",
+      "synonyms": [
+        "Caroline Queiroz Santos", 
+        "Caroline Queiroz", 
+        "Carol"
+      ]
+    },
+    {
+      "_id": 5,
+      "value": "Cinthya Rocha Tameirão",
+      "synonyms": [
+        "Cinthya Rocha Tameirão",
+        "Cinthya Rocha",
+        "Cinthya"
+      ]
+    },
+    {
+      "_id": 6,
+      "value": "Claudia Beatriz Berti",
+      "synonyms": [
+        "Claudia Beatriz Berti",
+        "Claudia Berti",
+        "Claudia"
+      ]
+    },
+    {
+      "_id": 7,
+      "value": "Eduardo Pelli",
+      "synonyms": [
+        "Eduardo Pelli",
+        "Pelli"
+      ]
+    },
+    {
+      "_id": 8,
+      "value": "Erinaldo Barbosa da Silva",
+      "synonyms": [
+        "Erinaldo Barbosa da Silva",
+        "Erinaldo Barbosa",
+        "Erinaldo"
+      ]
+    },
+    {
+      "_id": 9,
+      "value": "George Henrique M. Rodolfo",
+      "synonyms": [
+        "George Henrique M. Rodolfo",
+        "George"
+      ]
+    },
+    {
+      "_id": 10,
+      "value": "Geruza de Fátima Tomé Sabino",
+      "synonyms": [
+        "Geruza de Fátima Tomé Sabino",
+        "Geruza"
+      ]
+    },
+    {
+      "_id": 11,
+      "value": "Leonardo Lana de Carvalho",
+      "synonyms": [
+        "Leonardo Lana de Carvalho",
+        "Leonardo Lana",
+        "Lana",
+        "Leonardo",
+        "Leo"
+      ]
+    },
+    {
+      "_id": 12,
+      "value": "Luciana Pereira de Assis",
+      "synonyms": [
+        "Luciana Pereira de Assis",
+        "Luciana Pereira",
+        "Luciana Assis",
+        "Luciana"
+      ]
+    },
+    {
+      "_id": 13,
+      "value": "Marcelo Ferreira Rego",
+      "synonyms": [
+        "Marcelo Ferreira Rego",
+        "Marcelo Ferreira",
+        "Marcelo Rego",
+        "Marcelo"
+      ]
+    },
+    {
+      "_id": 14,
+      "value": "Maria Lúcia Bento Villela",
+      "synonyms": [
+        "Maria Lúcia Bento Villela",
+        "Maria Lúcia Bento",
+        "Maria Lúcia Villela",
+        "Maria Lúcia"
+      ]
+    },
+    {
+      "_id": 15,
+      "value": "Rafael Santin",
+      "synonyms": [
+        "Rafael Santin",
+        "Rafael",
+        "Santin"
+      ]
+    }
+  ],
+  "research_groups": [
+    {
+      "_id": 1,
+      "value": "GesTI",
+      "synonyms": [
+        "GesTI"
+      ]
+    },
+    {
+      "_id": 2,
+      "value": "LabLIC",
+      "synonyms": [
+        "LabLIC"
+      ]
+    },
+    {
+      "_id": 3,
+      "value": "LaPIES",
+      "synonyms": [
+        "LaPIES"
+      ]
+    },
+    {
+      "_id": 4,
+      "value": "MTPLNAM",
+      "synonyms": [
+        "MTPLNAM"
+      ]
+    },
+    {
+      "_id": 5,
+      "value": "OIA",
+      "synonyms": [
+        "OIA"
+      ]
+    }
+  ],
+  "laboratories": [
+    {
+      "_id": 1,
+      "value": "Laboratorio 31",
+      "synonyms": [
+        "31",
+        "Lab 31",
+        "Laboratório 31"
+      ]
+    },
+    {
+      "_id": 2,
+      "value": "Laboratório 32",
+      "synonyms": [
+        "32",
+        "Lab 32",
+        "Laboratório 32"
+      ]
+    },
+    {
+      "_id": 3,
+      "value": "Laboratório 33",
+      "synonyms": [
+        "33",
+        "Lab 33",
+        "Laboratório 33"
+      ]
+    },
+    {
+      "_id": 4,
+      "value": "Laboratório 34",
+      "synonyms": [
+        "34",
+        "Lab 34",
+        "Laboratório 34"
+      ]
+    },
+    {
+      "_id": 5,
+      "value": "Laboratório 35",
+      "synonyms": [
+        "35",
+        "Lab 35",
+        "Laboratório 35"
+      ]
+    },
+    {
+      "_id": 6,
+      "value": "Laboratório 36",
+      "synonyms": [
+        "36",
+        "Lab 36",
+        "Laboratório 36"
+      ]
+    }
+  ],
+  "another_places": [
+    {
+      "_id": 1,
+      "value": "Auditório",
+      "synonyms": [
+        "Auditório"
+      ]
+    },
+    {
+      "_id": 2,
+      "value": "Next Step",
+      "synonyms": [
+        "Empresa Junior",
+        "Empresa Jr",
+        "Next Step",
+        "Sala da Empresa Jr"
+      ]
+    },
+    {
+      "_id": 3,
+      "value": "Sala 37",
+      "synonyms": [
+        "37",
+        "Sala 37"
+      ]
+    },
+    {
+      "_id": 4,
+      "value": "Secretária",
+      "synonyms": [
+        "Evandro",
+        "Sala da Secretária",
+        "Sala do Evandro",
+        "Secretária"
+      ]
+    },
+    {
+      "_id": 5,
+      "value": "Técnicos",
+      "synonyms": [
+        "Alan",
+        "Oscar",
+        "Sala do Alan",
+        "Sala do Oscar",
+        "Sala do Oscar e Alan",
+        "Sala dos Técnicos",
+        "Técnicos"
+      ]
+    },
+    {
+      "_id": 6,
+      "value": "The Bug",
+      "synonyms": [
+        "The Bug",
+        "Atlética",
+        "Sala da Atlética"
+      ]
+    }
+  ]
+}
