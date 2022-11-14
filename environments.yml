@@ -1,0 +1,9 @@
+rasa:
+   production:
+      url: http://rasa-production:5005
+      token: ${RASA_TOKEN}
+   worker:
+      url: http://rasa-worker:5005
+      token: ${RASA_TOKEN}
+   development:
+      url: http://localhost:5005
